@@ -13,14 +13,10 @@
     clippy::borrow_interior_mutable_const
 )]
 
-//mod asriel;
-//mod joe;
 mod kirby;
 
 #[skyline::main(name = "smashline_test")]
 pub fn main() {
-    //asriel::install();
-	//joe::install();
 	kirby::install();
 	smashline::whitelist_kirby_copy_article(*smash::lib::lua_const::FIGHTER_KIND_DOLLY, *smash::lib::lua_const::WEAPON_KIND_DOLLY_BURST);
 }
